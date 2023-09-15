@@ -1,0 +1,9 @@
+<div class="container">
+  <%= simple_form_for(@booking, @car) do |f| %>
+    <input type="string" placeholder="Select your dates" data-controller="flatpickr" data-flatpickr-array-value=<%= @unavailable_dates %> data-flatpickr-price-per-day-value=<%= @car.price_per_day %>>
+    <%= f.input :starts_at, as: :hidden, input_html: { id: 'starts_at' } %>
+    <%= f.input :ends_at, as: :hidden, input_html: { id: 'ends_at' } %>
+
+    <%= f.submit 'Book now', class: 'main-cta m-bold-title' %>
+  <% end %>
+</div>
