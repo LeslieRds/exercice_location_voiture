@@ -5,5 +5,5 @@
   <%= link_to "créer mon compte", new_user_registration_path %>
   <h2>Vous êtes déjà inscrit?</h2>
   <p>Vous pouvez consulter tous nos véhicules en cliquant sur le lien ci-dessous</p>
-  <%= link_to "Voir les véhicules", cars_path %>
+  <%= link_to "Voir les véhicules", cars_path(@cars) %>
 </div>
