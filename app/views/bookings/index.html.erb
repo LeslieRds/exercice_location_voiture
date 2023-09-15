@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>Mes réservations</h2>
+    <% @bookings.each do |booking| %>
+      <h3 class="home-offer-card-infos-name"><%= booking.car.brand %></h3>
+      <p class="home-offer-card-infos-description"><%= booking.start_date %> - <%= booking.end_date %></p>
+    <% end %>
+</div>
