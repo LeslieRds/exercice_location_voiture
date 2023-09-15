@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Nos voitures</h1>
+  <% @cars.each do |car| %>
+    <%= car.brand %>
+    <%= car.price %> SimpFlouz / jour
+    <%= link_to "Voir le véhicule", car_path(car) %><br><br>
+  <% end  %>
+</div>

@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1>Bienvenu sur notre site de location de voitures entre particuliers</h1>
+  <h2>C'est votre première visite?</h2>
+  <p>Vous pouvez créer votre compte dès maintenant en cliquant sur le lien ci-dessous</p>
+  <%= link_to "créer mon compte", new_user_registration_path %>
+  <h2>Vous êtes déjà inscrit?</h2>
+  <p>Vous pouvez consulter tous nos véhicules en cliquant sur le lien ci-dessous</p>
+  <%= link_to "Voir les véhicules", cars_path %>
+</div>
